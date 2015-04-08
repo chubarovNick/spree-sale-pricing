@@ -1,7 +1,6 @@
-# encoding: UTF-8
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree-sale_price'
+  s.name        = 'spree_sale_prices'
   s.version     = '2.4.5.1'
   s.summary     = 'Adds sale pricing functionality to Spree Commerce'
   s.description = 'Adds sale pricing functionality to Spree Commerce'
@@ -11,8 +10,8 @@ Gem::Specification.new do |s|
   s.email             = 'info@renuo.ch'
   s.homepage          = 'https://www.renuo.ch'
 
-  #s.files       = `git ls-files`.split("\n")
-  #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.files        = `git ls-files -z`.split("\x0")
+  s.test_files   = `git ls-files -- spec/*`.split("\n")
   s.require_path = 'lib'
   s.requirements << 'none'
 
